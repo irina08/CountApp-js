@@ -24,5 +24,11 @@ describe('DEFAULT COUNTER FUNCTIONALITY', function () {
         expect(countValue).toEqual(expectedDCF.countValueTC041);
     })
 
+  it('TC-042 LLF accept 1', function () {
+    inputNumber('left', expectedDCF.inputMin);
+    const result = $(selectorCnt.error).isDisplayed();
+    expect(result).toEqual(false);
+  })
+
 
 });
