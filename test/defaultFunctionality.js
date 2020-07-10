@@ -17,5 +17,12 @@ describe('DEFAULT COUNTER FUNCTIONALITY', function () {
         expect(countValue).toEqual(expectedDCF.countValueTC040);
     })
 
+    it('TC-041 Add 3 gives 2', function () {
+        const button = $$(selectorCnt.blackBtn)[5];
+        button.click();
+        const countValue = $(selectorCnt.countValue).getText();
+        expect(countValue).toEqual(expectedDCF.countValueTC041);
+    })
+
 
 });
