@@ -30,5 +30,13 @@ describe('DEFAULT COUNTER FUNCTIONALITY', function () {
     expect(result).toEqual(false);
   })
 
+  it('TC-043 ULF accept 9', function () {
+    inputNumber('right', expectedDCF.inputMax);
+    const result = $(selectorCnt.error).isDisplayed();
+    expect(result).toEqual(false);
+  })
+
+
+
 
 });
