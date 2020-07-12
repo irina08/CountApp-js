@@ -52,6 +52,13 @@ describe('DEFAULT COUNTER FUNCTIONALITY', function () {
     expect(actual).toEqual(expectedDCF.btnQuantity2);
   })
 
+  it('TC-046-1 Count Value works', function () {
+    $$(selectorCnt.blackBtn)[1].click();
+    const actual = $(selectorCnt.countValue).getText();
+    expect(actual).toEqual(expectedDCF.inputMax);
+  })
+
+
 
 
 
