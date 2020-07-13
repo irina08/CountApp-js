@@ -64,6 +64,10 @@ describe('DEFAULT COUNTER FUNCTIONALITY', function () {
     expect(actual).toEqual(expectedDCF.countValue);
   })
 
-
+  it('TC-047 Delete button works', function () {
+    $(selectorCnt.deleteBtn).click();
+    const actual = $(selectorCnt.countValue).isDisplayed()
+    expect(actual).toEqual(false);
+  })
 
 });
