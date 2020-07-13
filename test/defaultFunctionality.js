@@ -58,8 +58,11 @@ describe('DEFAULT COUNTER FUNCTIONALITY', function () {
     expect(actual).toEqual(expectedDCF.inputMax);
   })
 
-
-
+  it('TC-046 Reset button works', function () {
+    $(selectorCnt.resetBtn).click();
+    const actual = $(selectorCnt.countValue).getText()
+    expect(actual).toEqual(expectedDCF.countValue);
+  })
 
 
 
