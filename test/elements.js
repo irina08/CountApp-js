@@ -12,6 +12,12 @@ describe('Complex Counter App', function () {
         })
     });
 
+    describe('Elements exist', function () {
+        it('TC-002 Header', function () {
+            const actual = $(selectorGen.header).isDisplayed();
+            expect(actual).toEqual(true);
+        })
 
+    });
 
 });
