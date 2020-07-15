@@ -18,6 +18,12 @@ describe('Complex Counter App', function () {
             expect(actual).toEqual(true);
         })
 
-    });
+      it('TC-003 Total Result', function () {
+        const actual = $(selectorGen.totalResult).isDisplayed();
+        expect(actual).toEqual(true);
+      })
+
+
+  });
 
 });
