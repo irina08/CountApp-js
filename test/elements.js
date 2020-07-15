@@ -22,6 +22,10 @@ describe('Complex Counter App', function () {
         const actual = $(selectorGen.totalResult).isDisplayed();
         expect(actual).toEqual(true);
       })
+      it('TC-004 Add Name Field', function () {
+        const actual = $(selectorGen.addNameField).isDisplayed();
+        expect(actual).toEqual(true);
+      })
 
 
   });
