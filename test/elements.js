@@ -32,6 +32,11 @@ describe('Complex Counter App', function () {
         expect(actual).toEqual(true);
       })
 
+      it('TC-006 Default Value Field', function () {
+        const actual = $(selectorGen.defaultValueField).isDisplayed();
+        expect(actual).toEqual(true);
+      })
+
 
   });
 
