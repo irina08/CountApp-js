@@ -26,6 +26,11 @@ describe('Complex Counter App', function () {
         const actual = $(selectorGen.addNameField).isDisplayed();
         expect(actual).toEqual(true);
       })
+      it('TC-005 Label for Add Name Field', function () {
+        const actual = $$(selectorGen.addNameFieldLabel)[$$(selectorGen.addNameFieldLabel).length-2].isDisplayed();
+        //$$('label')[$$('label').length-2]
+        expect(actual).toEqual(true);
+      })
 
 
   });
