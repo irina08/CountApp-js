@@ -45,6 +45,13 @@ describe('Complex Counter App', function () {
         expect(actual).toEqual(true);
       })
 
+      it('TC-008 Add Counter', function () {
+        const actual = $(selectorGen.addCounterBtn).isDisplayed();
+        expect(actual).toEqual(true);
+      })
+    });
+
+
 
   });
 
