@@ -51,6 +51,12 @@ describe('Complex Counter App', function () {
       })
     });
 
+  describe('Elements value', function () {
+    it('TC-009 Header = Counter', function () {
+      const actual = $(selectorGen.header).getText();
+      expect(actual).toEqual(expectedGen.header);
+    })
+
 
 
   });
