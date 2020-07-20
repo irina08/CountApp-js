@@ -57,6 +57,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedGen.header);
     })
 
+    it('TC-010 Total Result = Total: 0', function () {
+      const actual = $(selectorGen.totalResult).getText();
+      expect(actual).toEqual(expectedGen.totalResult);
+    })
+
 
 
   });
