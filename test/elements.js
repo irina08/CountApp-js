@@ -62,6 +62,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedGen.totalResult);
     })
 
+    it('TC-011 Label for Add Name Field = Enter Counter Title:', function () {
+      const actual = $$(selectorGen.addNameFieldLabel)[$$(selectorGen.addNameFieldLabel).length-2].getText();
+      expect(actual).toEqual(expectedGen.addNameFieldLabel);
+    })
+
 
 
   });
