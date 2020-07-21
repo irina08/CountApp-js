@@ -67,6 +67,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedGen.addNameFieldLabel);
     })
 
+    it('TC-012 Placeholder for Add Name Field = Counter Name', function () {
+      const actual = $(selectorGen.addNameField).getValue();
+      expect(actual).toEqual(expectedGen.addNameField);
+    })
+
 
 
   });
