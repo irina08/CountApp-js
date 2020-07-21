@@ -72,6 +72,12 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedGen.addNameField);
     })
 
+    it('TC-013 Label for Default Value Field = Enter Initial Count:', function () {
+      const actual = $$(selectorGen.defaultValueFieldLabel)[$$(selectorGen.defaultValueFieldLabel).length-1].getText();
+      expect(actual).toEqual(expectedGen.defaultValueFieldLabel);
+    })
+
+
 
 
   });
