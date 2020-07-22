@@ -77,6 +77,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedGen.defaultValueFieldLabel);
     })
 
+    it('TC-014 Placeholder for Default Value Field = 50', function () {
+      const actual = $(selectorGen.defaultValueField).getValue();
+      expect(actual).toEqual(expectedGen.defaultValueField);
+    })
+
 
 
 
