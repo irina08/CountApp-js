@@ -95,6 +95,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(true);
     })
 
+    it('TC-017 Count Value', function () {
+      const actual = $(selectorCnt.countValue).isDisplayed();
+      expect(actual).toEqual(true);
+    })
+
 
 
   });
