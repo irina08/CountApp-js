@@ -88,6 +88,15 @@ describe('Complex Counter App', function () {
     })
   });
 
+  describe('Default Counter Elements exist', function () {
 
+    it('TC-016 Counter Name', function () {
+      const actual = $$(selectorCnt.counterName)[1].isDisplayed();
+      expect(actual).toEqual(true);
+    })
+
+
+
+  });
 
 });
