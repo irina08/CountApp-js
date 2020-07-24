@@ -105,6 +105,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(true);
     })
 
+    it('TC-019 ULF', function () {
+      const actual = $(selectorCnt.upperLimitField).isDisplayed();
+      expect(actual).toEqual(true);
+    })
+
 
   });
 
