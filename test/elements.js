@@ -115,6 +115,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.defaultNumberBlackBtn);
     })
 
+    it('TC-022 Delete button', function () {
+      const actual = $(selectorCnt.deleteBtn).isDisplayed();
+      expect(actual).toEqual(true);
+    })
+
 
 
   });
