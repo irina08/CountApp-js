@@ -110,6 +110,12 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(true);
     })
 
+    it('TC-020, TC-021 Default Sub and Add Buttons', function () {
+      const actual = $$(selectorCnt.blackBtn).filter(el => el.isDisplayed()).length;
+      expect(actual).toEqual(expectedCnt.defaultNumberBlackBtn);
+    })
+
+
 
   });
 
