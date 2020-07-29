@@ -125,6 +125,12 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(true);
     })
 
+    it('TC-024 Edit Name Field', function () {
+      const actual = $(selectorCnt.editNameField).isDisplayed();
+      expect(actual).toEqual(true);
+    })
+
+
 
 
   });
