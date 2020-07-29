@@ -130,6 +130,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(true);
     })
 
+    it('TC-025 Label for Edit Name Field', function () {
+      const actual = $(selectorCnt.editNameFieldLabel).isDisplayed();
+      expect(actual).toEqual(true);
+    })
+
 
 
 
