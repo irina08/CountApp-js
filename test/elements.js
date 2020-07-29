@@ -135,7 +135,10 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(true);
     })
 
-
+    it('TC-026 Input for LLF', function () {
+      const actual = $(selectorCnt.lowerLimitField).isDisplayed();
+      expect(actual).toEqual(true);
+    })
 
 
   });
