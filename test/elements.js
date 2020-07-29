@@ -120,6 +120,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(true);
     })
 
+    it('TC-023 Reset button', function () {
+      const actual = $(selectorCnt.resetBtn).isDisplayed();
+      expect(actual).toEqual(true);
+    })
+
 
 
   });
