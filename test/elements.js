@@ -146,6 +146,14 @@ describe('Complex Counter App', function () {
     })
   });
 
+  describe('DEFAULT COUNTER ELEMENTS VALUE', function () {
 
+    it('TC-028 Counter Name = 1. Default Counter', function () {
+      const actual = $$(selectorCnt.counterName)[1].getText();
+      expect(actual).toEqual(expectedCnt.counterName);
+    })
+
+
+  });
 
 });
