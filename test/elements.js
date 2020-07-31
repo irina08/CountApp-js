@@ -158,7 +158,10 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.countValue);
     })
 
-
+    it('TC-030 LLF = CHANGE STEP OPTIONS?', function () {
+      const actual = $(selectorCnt.lowerLimitField).getText();
+      expect(actual).toEqual(expectedCnt.lowerLimitField);
+    })
 
 
   });
