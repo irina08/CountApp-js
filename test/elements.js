@@ -153,6 +153,13 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.counterName);
     })
 
+    it('TC-029 Count Value = 0', function () {
+      const actual = $(selectorCnt.countValue).getText();
+      expect(actual).toEqual(expectedCnt.countValue);
+    })
+
+
+
 
   });
 
