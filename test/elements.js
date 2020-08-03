@@ -168,6 +168,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.blackBtn);
     })
 
+    it('TC-032 ULF = CHANGE STEP OPTIONS?', function () {
+      const actual = $(selectorCnt.upperLimitField).getText();
+      expect(actual).toEqual(expectedCnt.upperLimitField);
+    })
+
 
   });
 
