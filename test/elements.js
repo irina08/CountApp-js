@@ -163,6 +163,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.lowerLimitField);
     })
 
+    it('TC-031 & TC-33 Default Sub && Add Buttons = -1, -2, -3, 1, 2, 3', function () {
+      const actual = $$(selectorCnt.blackBtn).map(el => el.getText());
+      expect(actual).toEqual(expectedCnt.blackBtn);
+    })
+
 
   });
 
