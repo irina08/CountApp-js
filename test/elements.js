@@ -173,6 +173,12 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.upperLimitField);
     })
 
+    it('TC-034 Delete button = Delete', function () {
+      const actual = $(selectorCnt.deleteBtn).getText();
+      expect(actual).toEqual(expectedCnt.deleteBtn);
+    })
+
+
 
   });
 
