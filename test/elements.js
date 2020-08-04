@@ -178,6 +178,12 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.deleteBtn);
     })
 
+    it('TC-035 Reset button = Reset', function () {
+      const actual = $(selectorCnt.resetBtn).getText();
+      expect(actual).toEqual(expectedCnt.resetBtn);
+    })
+
+
 
 
   });
