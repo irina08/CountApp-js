@@ -183,6 +183,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.resetBtn);
     })
 
+    it('TC-036 Label = Edit Counter Title', function () {
+      const actual = $(selectorCnt.editNameFieldLabel).getText();
+      expect(actual).toEqual(expectedCnt.editNameFieldLabel);
+    })
+
 
 
 
