@@ -188,6 +188,11 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.editNameFieldLabel);
     })
 
+    it('TC-037 Placeholder for Edit Name Field = Default Counter', function () {
+      const actual = $(selectorCnt.editNameField).getValue();
+      expect(actual).toEqual(expectedCnt.editNameField);
+    })
+
 
 
 
