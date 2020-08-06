@@ -193,6 +193,12 @@ describe('Complex Counter App', function () {
       expect(actual).toEqual(expectedCnt.editNameField);
     })
 
+    it('TC-038 Input for LLF = 1', function () {
+      $(selectorCnt.lowerLimitField).click();
+      const actual = $(selectorCnt.lowerInputField).getValue();
+      expect(actual).toEqual(expectedCnt.lowerInputField);
+    })
+
 
 
 
